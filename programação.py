@@ -24,10 +24,11 @@ while True:
 	if player == computer:
 		if pix:
 			pontos += (streak * pontos)
+			pix = streak * pontos
 		else:
 			pontos += 1
+			pix = 1
 		streak += 1
-		pix = (streak * pontos)
 		print(f"Você ganhou {pix} pontos! O número era {computer} e você escolheu {player}")
 		print(f"streak: {streak}")
 		print(f"pontos: {pontos}")
