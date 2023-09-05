@@ -14,15 +14,16 @@ def par_verification(player = 2):
 
 pontos = 0
 streak = 0
-pix = sequencia(pontos, streak)
 
 while True:
-	computer = randint(1, 2)
+	computer = randint(1, 5)
+	pix = sequencia(pontos, streak)
 	player = int(input("Digite um número entre 1-5: "))
 	while player not in [1, 2, 3, 4, 5]:
 		player = int(input("Favor digitar um número entre 1-5: "))
 	if player == computer:
 		if pix:
+			pix = pontos + (streak * pontos)
 			pontos += (streak * pontos)
 		else:
 			pontos += 1
