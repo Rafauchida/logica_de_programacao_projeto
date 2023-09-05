@@ -21,9 +21,9 @@ while True:
 	player = int(input("Digite um número entre 1-5: "))
 	while player not in [1, 2, 3, 4, 5]:
 		player = int(input("Favor digitar um número entre 1-5: "))
+	pix = (streak * pontos)
 	if player == computer:
 		if pix:
-			pix = (streak * pontos)
 			pontos += (streak * pontos)
 		else:
 			pontos += 1
