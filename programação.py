@@ -21,13 +21,13 @@ while True:
 	player = int(input("Digite um número entre 1-5: "))
 	while player not in [1, 2, 3, 4, 5]:
 		player = int(input("Favor digitar um número entre 1-5: "))
-	pix = (streak * pontos)
 	if player == computer:
 		if pix:
 			pontos += (streak * pontos)
 		else:
 			pontos += 1
 		streak += 1
+		pix = (streak * pontos)
 		print(f"Você ganhou {pix} pontos! O número era {computer} e você escolheu {player}")
 		print(f"streak: {streak}")
 		print(f"pontos: {pontos}")
