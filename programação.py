@@ -23,7 +23,7 @@ while True:
 		player = int(input("Favor digitar um número entre 1-5: "))
 	if player == computer:
 		if pix:
-			pix = pontos + (streak * pontos)
+			pix = (streak * pontos)
 			pontos += (streak * pontos)
 		else:
 			pontos += 1
